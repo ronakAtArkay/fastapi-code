@@ -1,0 +1,10 @@
+Single file upload 
+curl --location '127.0.0.1:8000/uploadfile/' \
+--form 'file=@"/workspaces/fastapi-boilerplate/app/images/test.png"'
+
+
+Multiple files upload
+
+curl --location '127.0.0.1:8000/uploadfiles/' \
+--form 'files=@"/workspaces/fastapi-boilerplate/app/images/test.png"' \
+--form 'files=@"/workspaces/fastapi-boilerplate/app/data/test.json"'
